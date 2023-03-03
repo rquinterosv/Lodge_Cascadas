@@ -1,8 +1,8 @@
 /*
 Colors 
-  #acb404
-  #047c94
-  #041c2c
+  #acb404: Green
+  #047c94: Light Blue
+  #041c2c: Dark Blue 
 */
 
 /*
@@ -10,8 +10,54 @@ Fonts: Open Sans 300;500;800
 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,800;1,300&display=swap');
 
+/*This is the standar configuration for all the web desing*/
 * {
  margin: 0;
  padding: 0;
  font-family: 'Open Sans', sans-serif;
 }
+
+
+
+/* Navbar modification */
+.menu {
+    background-color: #041c2c;
+  }
+  
+  .menu .items .image img {
+    /* Set maximum width to 100% to ensure the image does not exceed the width of its container */
+    max-width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    /* Styles for desktop */
+    .menu .items .image img {
+      width: 100px;
+      height: auto;
+      padding-top: 20px;
+      padding-left: 20px;
+      /* Add other desktop styles here */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    /* Styles for mobile */
+    .menu .items .image img {
+      width: 100px;
+      height: auto;
+      padding-top: 20px;
+      padding-left: 10px;
+      /* Add other mobile styles here */
+    }
+  }
+
+  .menu .items{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu .items .options .option{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+  }
